@@ -1,0 +1,193 @@
+.ponomar-regular {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+  background-image:
+    linear-gradient(45deg, #444 25%, transparent 25%),
+    linear-gradient(-45deg, #444 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #444 75%),
+    linear-gradient(-45deg, transparent 75%, #444 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 238, 238);
+    text-shadow:
+        1px 1px 2px red,
+        0 0 1em rgb(0, 0, 115),
+        0 0 0.2em blue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px red;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.note {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(150, 150, 150);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 400px;
+}
+
+#add-note-btn {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(117, 255, 95);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.delete-btn {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 40, 40);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url('image/dragon.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.image2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url('image/dragon2.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 1;
+}
+.sort-btn{
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(6, 164, 226);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.theme-btn {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #4CAF50;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 16px;
+}
+
+body.light-theme {
+    background-color: white;
+    background-image:
+      linear-gradient(45deg, #ccc 25%, transparent 25%),
+      linear-gradient(-45deg, #ccc 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #ccc 75%),
+      linear-gradient(-45deg, transparent 75%, #ccc 75%);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+  }
+
+
+body.light-theme h1 {
+    color: #333;
+    text-shadow: 
+        1px 1px 2px #ff6b6b,
+        0 0 1em #4d96ff,
+        0 0 0.2em #4d96ff;
+}
+
+body.light-theme .note {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+body.light-theme input {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+body.light-theme .image {
+    background-image: url('image/dragon3.png');
+
+}
+
+body.light-theme .image2 {
+    
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url('image/dragon4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+    
+}

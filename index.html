@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Записник</title>
+</head>
+
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&family=Jacquard+12&family=Oswald:wght@200..700&family=Ponomar&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<body>
+    
+    <div class="container">
+        <div class="image"></div>
+        <div class="image2"></div>
+        <h1 class="Osn"> Мій Записник</h1>
+        
+        <div class="add-note">
+            <input type="text" id="note-title" placeholder="Заголовок запису...">
+            <input id="note-content" placeholder="Текст запису..."></input>
+            <button id="add-note-btn"> Додати запис</button>
+            <button class="delete-btn">Видалити</button>
+            <button id="sort-btn" class="sort-btn">Сортувати за датою</button>
+            <button id="theme-toggle" class="theme-btn">Світла тема</button>
+        </div>
+        
+        <div class="notes-list" id="notes-container">
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
